@@ -1,5 +1,13 @@
-!apps/*/migrations/__init__.py
-apps/*/migrations/*
+!apps/custom_user/migrations/__init__.py
+!apps/templating/migrations/__init__.py
+!apps/read_also/migrations/__init__.py
+!apps/dynamic/migrations/__init__.py
+!apps/api/migrations/__init__.py
+apps/custom_user/migrations/*
+apps/templating/migrations/*
+apps/read_also/migrations/*
+apps/dynamic/migrations/*
+apps/api/migrations/*
 secret-key.txt
 /__pycache__/
 __pycache__/

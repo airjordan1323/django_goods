@@ -32,7 +32,7 @@ class NewsListTwoView(ListAPIView):
 
 
 class NewsDetailView(APIView):
-    """вывод деталей новостей иногда не apiview не показывает полный путь
+    """вывод деталей новостей иногда apiview не показывает полный путь
     к медии надо добавить context={'request': request}"""
 
     def get(self, request, pk):

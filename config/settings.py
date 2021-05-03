@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 
     # Apps
     'apps.custom_user',
+    'apps.templating',
     'apps.read_also',
     'apps.dynamic',
     'apps.api',

@@ -61,3 +61,35 @@ class Transaction(models.Model):
     class Meta:
         verbose_name = "Транзакция"
         verbose_name_plural = "Транзакции"
+
+
+# class CountItems(models.Model):
+#     item = models.ForeignKey(Item, verbose_name='count_item', on_delete=models.CASCADE)
+#     count = models.PositiveSmallIntegerField()
+#
+#     class Meta:
+#         verbose_name = "Кол-во на товар"
+#         verbose_name_plural = "Кол-во на товары"
+
+
+# class Order(models.Model):
+#     author = models.ForeignKey(Account, on_delete=models.CASCADE, verbose_name="Кассир", blank=True, null=True)
+#     name = models.CharField("Наименование", max_length=200)
+#     phone = models.CharField("Телефон", max_length=200)
+#     items = models.ManyToManyField(CountItems, verbose_name="Товары и кол-во", related_name="orders")
+#     TYPE_CHOICE = (
+#         ('ACCEPTED', 'ACCEPTED'),
+#         ('REJECTED', 'REJECTED'),
+#         ('NULL', 'NULL')
+#     )
+#     type_dj = models.CharField("Тип", choices=TYPE_CHOICE, default="NULL", max_length=10)
+#     pub_date = models.DateTimeField("Дата публикации", auto_now_add=True)
+#     last_change = models.DateTimeField("Дата изменении", default=timezone.now())
+#
+#     def save(self, *args, **kwargs):
+#         self.last_change = timezone.now()
+#         super().save(*args, **kwargs)
+#
+#     class Meta:
+#         verbose_name = "Сетка"
+#         verbose_name_plural = "Сетки"
