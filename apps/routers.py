@@ -26,5 +26,6 @@ urlpatterns = [
     path('api/', include('apps.api.urls')),
     path('read_also/', include('apps.read_also.urls')),
     path('dynamic/', include('apps.dynamic.urls')),
+    path('templating/', include('apps.templating.urls')),
 
 ]
